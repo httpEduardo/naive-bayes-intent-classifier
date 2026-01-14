@@ -1,0 +1,79 @@
+:root {
+  --ink: #111827;
+  --muted: #6b7280;
+  --accent: #7c3aed;
+  --bg: #faf5ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  display: grid;
+  gap: 16px;
+}
+
+header h1 { margin: 0 0 6px; }
+header p { margin: 0; color: var(--muted); }
+
+.panel {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.1);
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  resize: vertical;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+li {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f3e8ff;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  font-family: "Consolas", monospace;
+}

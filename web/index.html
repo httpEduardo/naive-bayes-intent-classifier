@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IntentForge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>IntentForge</h1>
+        <p>Route incoming text to the right intent.</p>
+      </header>
+      <section class="panel">
+        <textarea id="textInput" rows="4" placeholder="Type a user request..."></textarea>
+        <div class="actions">
+          <button id="predictButton">Predict intent</button>
+          <button id="seedButton" class="ghost">Load sample data</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Scores</h2>
+        <ul id="results"></ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
