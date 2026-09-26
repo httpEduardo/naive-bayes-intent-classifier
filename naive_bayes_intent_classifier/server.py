@@ -93,14 +93,14 @@ class Handler(SimpleHTTPRequestHandler):
 def run(host="127.0.0.1", port=5173):
     train_model()
     server = ThreadingHTTPServer((host, port), Handler)
-    print(f"IntentForge running at http://{host}:{port}")
+    print(f"Naive Bayes Intent Classifier running at http://{host}:{port}")
     server.serve_forever()
 
 
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Run IntentForge")
+    parser = argparse.ArgumentParser(description="Run Naive Bayes Intent Classifier")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=5173)
     args = parser.parse_args()
